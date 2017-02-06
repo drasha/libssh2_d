@@ -1,0 +1,13 @@
+{
+	"name": "libssh2_d",
+	"description": "D bindings for libssh2",
+	"copyright": "Copyright © 2017, Martin Drasar",
+	"authors": ["Martin Drasar"],
+	"license" : "MIT",
+	"dependencies": {
+	  "openssl" : "~>1.1.5+1.0.1g"
+	},
+	"targetType" : "sourceLibrary",
+	"copyFiles-windows-x86" : ["lib/win-i386/libeay32.dll", "lib/win-i386/ssleay32.dll", "lib/win-i386/libssh2.dll"],
+	"sourceFiles-windows-x86" : ["lib/win-i386/libeay32_omf.lib", "lib/win-i386/ssleay32_omf.lib", "lib/win-i386/libssh2_omf.lib"]
+}
